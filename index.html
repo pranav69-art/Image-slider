@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="1/2.jpg" alt="1" />
+          <h1>1.</h1>
+          <div class="details">
+            <h2>1.</h2>
+            <p>MOMENTS RESORT</p>
+            <a href="https://momentsresort.in/" target="_main"> Details   </a>
+
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="1/1.jpg" alt="2" />
+          <h1>2.</h1>
+          <div class="details">
+            <h2>2.</h2>
+            <p>FOWS CLUB AND RESORT</p>
+            <a href="https://www.tripadvisor.in/Hotel_Review-g662320-d23786542-Reviews-Focus_Club_and_Resort-Ranchi_Ranchi_District_Jharkhand.html" target="_main"> Details   </a>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="1/3.jpg" alt="3" />
+          <h1>3.</h1>
+          <div class="details">
+            <h2>3.</h2>
+            <p>AANGAN RESORT</p>
+            <a href="https://aanganresortranthambore.com/" target="_main"> Details   </a>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="1/4.jpg" alt="4" />
+          <h1>4.</h1>
+          <div class="details">
+            <h2>4.</h2>
+            <p>NEW FOUNTAIN RESORT</p>
+            <a href="https://www.justdial.com/Ranchi/New-Fountain-Banquet-Resort-Near-Jumar-River-Booty-More/0651PX651-X651-220626192444-J6L6_BZDET" target="_main"> Details   </a>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="1/5.jpg" alt="5" />
+          <h1>5.</h1>
+          <div class="details">
+            <h2>5.</h2>
+            <p>BALI RESORT AND HOTEL</p>
+            <a href="https://www.makemytrip.com/hotels/hotel_o_the_bali_resort-details-ranchi.html" target="_main"> Details   </a>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="1/6.jpg" alt="6" />
+          <h1>6.</h1>
+          <div class="details">
+            <h2>6.</h2>
+            <p>Kanke Resort Restaurant</p>
+            <a href="https://www.justdial.com/Ranchi/Kanke-Resort-Nagri-Kanke/0651PX651-X651-220722205351-W1P7_BZDET" target="_main"> Details   </a>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="1/7.jpg" alt="7" />
+          <h1>7.</h1>
+          <div class="details">
+            <h2>7.</h2>
+            <p>The Royal Retreat</p>
+            <a href="http://www.theroyalretreat.co.in/" target="_main"> Details   </a>
+          </div>
+        </div>
+      
+      
+      </div>
+
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
